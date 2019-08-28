@@ -1,0 +1,15 @@
+{
+  "lang":{
+    "english":"Anglais",
+    "french":"Français"
+  },
+  "menu": {
+    "home": "Accueil",
+    "skills": "Compétences",
+    "profile": "Profil"
+  },
+  "home": {
+    "title": "Qui suis-je ?",
+    "presentation": "Cher visiteur bonjour ! Moi c'est Quentin, un jeune développeur fullstack React/C#."
+  }
+}

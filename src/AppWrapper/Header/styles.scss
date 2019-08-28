@@ -1,0 +1,12 @@
+@import '../../Styles/_variables.scss';
+
+
+.logo {
+  height: 31px;
+  margin: 16px 24px 16px 0;
+  color : $menu-link-color;
+  width: 250px;
+  float: left;
+  font-size : 1.7em;
+  line-height: normal;
+}

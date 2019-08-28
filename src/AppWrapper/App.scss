@@ -1,0 +1,16 @@
+@import '~antd/dist/antd.css';
+@import '../Styles/_variables.scss';
+
+.fake-header, .sider-content {
+  padding : 20px 50px;
+}
+
+.fake-header {
+  height: 64px;
+  color: $menu-link-color;
+}
+
+.sider-content {
+  background-color: $clear;
+  height: 100%;
+}
