@@ -1,8 +1,5 @@
-.language-selector-component {
-  text-align: right;
-}
+@import '../../Styles/_variables.scss';
 
 .icon-language-selector {
-  font-size: 24px;
-
+  cursor: pointer;
 }

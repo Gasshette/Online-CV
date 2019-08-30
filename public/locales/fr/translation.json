@@ -11,5 +11,10 @@
   "home": {
     "title": "Qui suis-je ?",
     "presentation": "Cher visiteur bonjour ! Moi c'est Quentin, un jeune développeur fullstack React/C#."
+  },
+  "skills":{
+    "timeline":{
+      "august2019":"Août 2019 - Autoformation sur React :\n\n*   Les Hooks (React 16.8)\n*   Le Context Api (Stable depuis React 16.3)\n*   La magie du tarvail d'équipe ([Via cet article](https://medium.com/simply/state-management-with-react-hooks-and-context-api-at-10-lines-of-code-baf6be8302c))"
+    }
   }
 }

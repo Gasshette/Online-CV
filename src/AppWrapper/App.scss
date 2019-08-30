@@ -1,16 +1,24 @@
 @import '~antd/dist/antd.css';
 @import '../Styles/_variables.scss';
 
-.fake-header, .sider-content {
-  padding : 20px 50px;
+.app {
+  padding: 30px 50px;
+  background-color: $primary;
 }
 
-.fake-header {
-  height: 64px;
-  color: $menu-link-color;
+.ant-col {
+  &:not(.col-menu) {
+    border: 1px solid $dark;
+    border-radius: 5px;
+    padding: 20px 50px;
+  }
 }
 
-.sider-content {
-  background-color: $clear;
-  height: 100%;
+.col-menu {
+  text-align: center;
+}
+
+.col-profile, .col-skills {
+  background-color: $secondary;
+
 }

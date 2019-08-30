@@ -11,5 +11,10 @@
   "home": {
     "title": "Who am I ?",
     "presentation": "Hello dear visitor ! I am Quentin, a young fullstack React/C# developer."
+  },
+  "skills":{
+    "timeline":{
+      "august2019":"August 2019 - Autoformation on <Language language='react'>React</Language> :\n\n*   Hooks (React 16.8)\n*   Context Api (Stable since React 16.3)\n*   Teamwork magic ([Through this article](https://medium.com/simply/state-management-with-react-hooks-and-context-api-at-10-lines-of-code-baf6be8302c))"
+    }
   }
 }
