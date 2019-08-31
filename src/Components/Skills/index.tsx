@@ -1,75 +1,88 @@
 import React from 'react';
-import { Timeline, Tag } from 'antd';
+import { Timeline, Tag, Icon } from 'antd';
 import { useTranslation } from 'react-i18next';
 import ReactMarkdown from 'react-markdown';
 import Card from '../Card';
+import { renderToString } from 'react-dom/server';
 
 const Skills = () => {
   const { t } = useTranslation();
+  const primaryColor = '#424242';
+
+  const extractTitle = (key: string) => {
+    let title: string = '';
+    const domEl = document.createElement('div');
+
+    domEl.innerHTML = renderToString(<ReactMarkdown source={t(key)}/>);
+    title = domEl.getElementsByTagName('h3')[0].innerText;
+
+    return title;
+  };
 
   return (
     <Timeline>
-      <Timeline.Item color='blue'>
-        <Card>
-          <ReactMarkdown source={t('skills.timeline.august2019')} />
-          <div className='tags'>
-            <Tag color='blue'>React</Tag>
-          </div>
-        </Card>
-      </Timeline.Item>
       <Timeline.Item color='gray'>
-        <Card>
+        <Card title={extractTitle('skills.timeline.august2019')}>
           <ReactMarkdown source={t('skills.timeline.2019')} />
           <div className='tags'>
-            <Tag color='red'>Angular</Tag>
-            <Tag color='cyan'>C#</Tag>
-            <Tag color='#383838'>FullStack</Tag>
+            <Tag color='blue'>{t('tags.react')}</Tag>
           </div>
         </Card>
       </Timeline.Item>
       <Timeline.Item color='gray'>
-        <Card>
+        <Card title={extractTitle('skills.timeline.2019')}>
+          <ReactMarkdown source={t('skills.timeline.2019')} />
+          <div className='tags'>
+            <Tag color='red'>{t('tags.angular')}</Tag>
+            <Tag color='cyan'>{t('tags.csharp')}</Tag>
+            <Tag color={primaryColor}>{t('tags.fullstack')}</Tag>
+          </div>
+        </Card>
+      </Timeline.Item>
+      <Timeline.Item color='gray'>
+        <Card title={extractTitle('skills.timeline.2018')}>
           <ReactMarkdown source={t('skills.timeline.2018')} />
           <div className='tags'>
-            <Tag color='red'>Angular</Tag>
-            <Tag color='blue'>React</Tag>
-            <Tag color='cyan'>C#</Tag>
-            <Tag color='#383838'>FullStack</Tag>
-            <Tag color='#383838'>Architecture</Tag>
-            <Tag color='#383838'>Formation</Tag>
-            <Tag color='#383838'>Veille technologique</Tag>
+            <Tag color='red'>{t('tags.angular')}</Tag>
+            <Tag color='blue'>{t('tags.react')}</Tag>
+            <Tag color='cyan'>{t('tags.csharp')}</Tag>
+            <Tag color={primaryColor}>{t('tags.fullstack')}</Tag>
+            <Tag color={primaryColor}>{t('tags.architecture')}</Tag>
+            <Tag color={primaryColor}>{t('tags.formation')}</Tag>
+            <Tag color={primaryColor}>{t('tags.technological-watch')}</Tag>
           </div>
         </Card>
       </Timeline.Item>
       <Timeline.Item color='gray'>
-        <Card>
+        <Card title={extractTitle('skills.timeline.2017')}>
           <ReactMarkdown source={t('skills.timeline.2017')} />
           <div className='tags'>
             <Tag color='cyan'>C#</Tag>
-            <Tag color='#383838'>Architecture</Tag>
-            <Tag color='#383838'>Formation</Tag>
-            <Tag color='#383838'>Node.js</Tag>
-            <Tag color='#383838'>Git</Tag>
+            <Tag color={primaryColor}>{t('tags.architecture')}</Tag>
+            <Tag color={primaryColor}>{t('tags.formation')}</Tag>
+            <Tag color={primaryColor}>{t('tags.nodejs')}</Tag>
+            <Tag color={primaryColor}>{t('tags.git')}</Tag>
+            <Tag color={primaryColor}>{t('tags.gitflow')}</Tag>
           </div>
         </Card>
       </Timeline.Item>
       <Timeline.Item color='gray'>
-        <Card>
+        <Card title={extractTitle('skills.timeline.2016')}>
           <ReactMarkdown source={t('skills.timeline.2016')} />
         </Card>
       </Timeline.Item>
       <Timeline.Item color='gray'>
-        <Card>
+        <Card title={extractTitle('skills.timeline.2015')}>
           <ReactMarkdown source={t('skills.timeline.2015')} />
         </Card>
       </Timeline.Item>
       <Timeline.Item color='gray'>
-        <Card>
+        <Card title={extractTitle('skills.timeline.2013-2015')}>
           <ReactMarkdown source={t('skills.timeline.2013-2015')} />
         </Card>
       </Timeline.Item>
       <Timeline.Item color='gray'>
-        <Card>
+        <Card title={extractTitle('skills.timeline.2011-2013')}>
           <ReactMarkdown source={t('skills.timeline.2011-2013')} />
         </Card>
       </Timeline.Item>

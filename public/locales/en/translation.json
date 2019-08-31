@@ -3,6 +3,18 @@
     "english":"English",
     "french":"French"
   },
+  "tags":{
+    "react":"React",
+    "angular":"Angular",
+    "csharp": "C#",
+    "fullstack":"FullStack",
+    "architecture":"Architecture",
+    "formation": "Formation",
+    "technological-watch":"Technological watch",
+    "nodejs": "Node.js",
+    "git":"Git",
+    "gitflow":"GitFlow"
+  },
   "menu": {
     "home": "Home",
     "skills": "Skills",
@@ -20,7 +32,7 @@
       "2017": "### 2017 - CDI at Capgemini\n\n*   C# : Formation and apprenticeship (.NET framework, ASP.NET, Razor)\n*   Learning few Front-End development tools : Node.js, Git (Gitflow)",
       "2016": "### 2016\nJob search",
       "2015": "### 2015\n\nHotline and trial period at [Isagri](https://www.isagri.fr)",
-      "2013-2015": "### 2013 / 2015\n\nIT & Network year 3 bachelor, alternating studies at [La Brosse & Dupont](http://www.lbd.fr/en) and then 4 months duration contract",
+      "2013-2015": "### 2013 - 2015\n\nIT & Network year 3 bachelor, alternating studies at [La Brosse & Dupont](http://www.lbd.fr/en) and then 4 months duration contract",
       "2011-2013": "### 2011 - 2013\n\nIT & Network year 1 & 2 bachelor, alternating studies at [La Brosse & Dupont](http://www.lbd.fr/en)"
     }
   }

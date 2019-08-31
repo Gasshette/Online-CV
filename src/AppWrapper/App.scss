@@ -8,7 +8,6 @@
 
 .ant-col {
   &:not(.col-menu) {
-    border: 1px solid $dark;
     border-radius: 5px;
     padding: 20px 50px;
   }
@@ -20,6 +19,7 @@
 
 .col-profile, .col-skills {
   background-color: $secondary;
+  box-shadow: 5px 4px 4px $dark;
 
 }
 

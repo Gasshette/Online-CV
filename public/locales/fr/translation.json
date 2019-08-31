@@ -3,6 +3,18 @@
     "english":"Anglais",
     "french":"Français"
   },
+  "tags":{
+    "react":"React",
+    "angular":"Angular",
+    "csharp": "C#",
+    "fullstack":"FullStack",
+    "architecture":"Architecture",
+    "formation": "Formation",
+    "technological-watch":"Veille technologique",
+    "nodejs": "Node.js",
+    "git":"Git",
+    "gitflow":"GitFlow"
+  },
   "menu": {
     "home": "Accueil",
     "skills": "Compétences",

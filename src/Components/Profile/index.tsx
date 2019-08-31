@@ -10,7 +10,7 @@ const Profile: React.FC = () => {
   return (
     <div className='profile-component'>
       <div className='avatar'>
-        <Avatar icon='user' size='large' />
+        <Avatar>Quentin</Avatar>
       </div>
       <div className='content'>{t('home.presentation')}</div>
     </div>

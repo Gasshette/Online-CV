@@ -1,8 +1,15 @@
 import React from 'react';
 import './styles.scss';
+import { withTranslation, WithTranslation } from 'react-i18next';
 
-class Card extends React.Component {
+interface ICard extends WithTranslation {
+  children: any;
+  title: string;
+}
+
+class Card extends React.Component<ICard> {
   private cardRef = React.createRef<HTMLDivElement>();
+  private isUpdated: boolean;
   public state: any;
 
   constructor(props: any) {
@@ -11,29 +18,39 @@ class Card extends React.Component {
     this.state = {
       title: ''
     };
+
+    this.isUpdated = false;
+
+    this.removeTitle = this.removeTitle.bind(this);
   }
 
   componentDidMount() {
-    const componentNode = this.cardRef.current;
+    this.removeTitle();
+  }
 
-    if (componentNode) {
-      const h3elements = componentNode.getElementsByTagName('h3');
+  removeTitle() {
+    if (!this.isUpdated) {
+      const componentNode = this.cardRef.current;
 
-      if (h3elements[1]) {
-        this.setState({ ...this.state, title: h3elements[1].innerHTML }, () => h3elements[1].remove());
+      if (componentNode) {
+        const h3elements = componentNode.getElementsByTagName('h3');
+
+        if (h3elements[0]) {
+          h3elements[0].remove();
+        }
       }
     }
   }
 
   render() {
     return (
-      <div className='card-component' ref={this.cardRef}>
-        <h3>{this.state.title}</h3>
+      <div className='card-component'>
+        <h3>{this.props.title}</h3>
         <div className='caret'></div>
-        <div className='card'>{this.props.children}</div>
+        <div className='card' ref={this.cardRef}>{this.props.children}</div>
       </div>
     );
   }
 }
 
-export default Card;
+export default withTranslation()(Card);

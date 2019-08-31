@@ -9,6 +9,9 @@
     cursor: pointer;
     font-size: 80px !important;
     color: $green;
+    border-radius: 50%;
+    box-shadow: 5px 4px 4px $dark;
+
   }
 
   .icon-surrounder {
@@ -32,6 +35,8 @@
     border-radius: 60px;
     list-style-type: none;
     z-index: 1;
+    box-shadow: 5px 4px 4px $dark;
+
 
     transition:
       max-height 0.5s,
