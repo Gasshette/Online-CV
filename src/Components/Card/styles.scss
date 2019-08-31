@@ -1,0 +1,50 @@
+@import '../../Styles/_variables.scss';
+
+.card-component {
+  position: relative;
+  height: auto;
+  width: 100%;
+  margin-left: 5px;
+  background-color: $clear;
+  border-radius: 5px 5px 5px 5px;
+
+  .caret {
+    position: absolute;
+    top: 5px;
+    left: -10px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 15px solid transparent;
+
+    border-right:10px solid $green;
+  }
+
+  .card {
+    padding: 15px;
+    background-color: $clear;
+
+  }
+
+  h3 {
+      margin: 0;
+      padding: 7px 15px;
+      border-radius: 5px 5px 0px 0px;
+      background-color: $green;
+      color: $clear;
+    }
+
+    .tags {
+      text-align: right;
+      border-top: 1px solid $secondary;
+      margin-top: 10px;
+      padding: 10px 0px 0px 0px;
+
+      .ant-tag {
+        margin: 0px 0px 5px 5px;
+
+      }
+    }
+
+
+}

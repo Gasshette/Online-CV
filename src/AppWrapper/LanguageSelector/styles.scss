@@ -1,5 +1,75 @@
 @import '../../Styles/_variables.scss';
 
-.icon-language-selector {
-  cursor: pointer;
+.language-selector-component {
+  position: relative;
+
+  .icon-language-selector {
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    font-size: 80px !important;
+    color: $green;
+  }
+
+  .icon-surrounder {
+    margin: auto;
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    padding: 15px;
+    border-radius: 60px;
+    background-color: $primary;
+  }
+
+  ul {
+    display: inline-block;
+    position: relative;
+    width: 100px; // 80px img + 20px padding left/right surrounder
+    padding: 0 0 0 0;
+    max-height: 0;
+    margin-top: -90px;
+    background-color: $secondary;
+    border-radius: 60px;
+    list-style-type: none;
+    z-index: 1;
+
+    transition:
+      max-height 0.5s,
+      padding 0.3s;
+
+    li {
+      display: inline-block;
+      opacity: 0;
+      padding: 5px;
+      text-align: center;
+      border-bottom: 1px solid $clear;
+      transition: opacity 0.3s linear;
+      width: 100%;
+
+      &:not(:last-child) {
+        border-top: 1px solid $clear;
+      }
+
+      &:hover {
+        cursor: pointer;
+        background-color: $green;
+        color: $clear;
+      }
+    }
+  }
+
+  .content {
+    width: 115px;
+    margin: auto;
+  }
+  .content:hover > ul {
+    max-height: 100%;
+    padding-top: 100px;
+    padding-bottom: 45px;
+
+    & li {
+      opacity: 1;
+      transition: opacity 0.5s 0.3s;
+    }
+  }
 }

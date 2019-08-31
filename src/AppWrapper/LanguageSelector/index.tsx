@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Menu, Dropdown, Icon } from 'antd';
+import { Menu, Dropdown, Icon, List } from 'antd';
 import './styles.scss';
 
 interface IProps {
@@ -10,28 +10,34 @@ interface IProps {
 const LanguageSelector: React.FC<IProps> = ({ style }) => {
   const { i18n, t } = useTranslation();
 
-  function handleMenuClick(e: any): void {
-    i18n.changeLanguage(e.key);
-  }
-
-  const menu = (
-    <Menu onClick={handleMenuClick}>
-      <Menu.Item key='en'>
-        <Icon type='flag' theme={i18n.language === 'en' ? 'filled' : 'outlined'} />
-        {t('lang.english')}
-      </Menu.Item>
-      <Menu.Item key='fr'>
-        <Icon type='flag' theme={i18n.language === 'fr' ? 'filled' : 'outlined'} />
-        {t('lang.french')}
-      </Menu.Item>
-    </Menu>
-  );
-
   return (
     <div className='language-selector-component'>
-      <Dropdown overlay={menu}>
-        <Icon className='icon-language-selector' type='global' style={style} />
-      </Dropdown>
+      <div className='content'>
+        <div className='icon-surrounder'>
+          <Icon
+            className='icon-language-selector'
+            type='global'
+            style={style}
+          />
+        </div>
+        <br />
+        <ul>
+          <li onClick={() => i18n.changeLanguage('en')}>
+            <Icon
+              type='flag'
+              theme={i18n.language === 'en' ? 'filled' : 'outlined'}
+            />{' '}
+            {t('lang.english')}
+          </li>
+          <li onClick={() => i18n.changeLanguage('fr')}>
+            <Icon
+              type='flag'
+              theme={i18n.language === 'fr' ? 'filled' : 'outlined'}
+            />{' '}
+            {t('lang.french')}
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };

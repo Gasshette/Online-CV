@@ -1,15 +1,9 @@
-import React, { Fragment } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Home from '../Components/Home';
-import { Displayer } from './Displayer';
-import Header from './Header';
-import { Layout, Skeleton, Empty, Row, Col } from 'antd';
+import React from 'react';
+import { Row, Col } from 'antd';
 import Skills from '../Components/Skills';
 import Profile from '../Components/Profile';
-
 import LanguageSelector from './LanguageSelector';
 import './App.scss';
-
 
 const App: React.FC = () => {
   return (
