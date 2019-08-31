@@ -10,12 +10,12 @@ const App: React.FC = () => {
     <div className='app'>
       <Row type='flex' style={{ alignItems: 'strech' }}>
         <Col span={10} className='col-profile'>
-          <Affix offsetTop={15}>
-            <Profile />
-          </Affix>
+          <Profile />
         </Col>
         <Col span={4} className='col-menu'>
-          <LanguageSelector style={{ fontSize: '40px' }} />
+          <Affix offsetTop={30}>
+            <LanguageSelector style={{ fontSize: '40px' }} />
+          </Affix>
         </Col>
         <Col span={10} className='col-skills'>
           <Skills />

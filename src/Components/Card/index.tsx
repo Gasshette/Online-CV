@@ -33,7 +33,7 @@ class Card extends React.Component<ICard> {
       const componentNode = this.cardRef.current;
 
       if (componentNode) {
-        const h3elements = componentNode.getElementsByTagName('h3');
+        const h3elements = componentNode.getElementsByTagName('h2');
 
         if (h3elements[0]) {
           h3elements[0].remove();
@@ -45,7 +45,7 @@ class Card extends React.Component<ICard> {
   render() {
     return (
       <div className='card-component'>
-        <h3>{this.props.title}</h3>
+        <h2>{this.props.title}</h2>
         <div className='caret'></div>
         <div className='card' ref={this.cardRef}>{this.props.children}</div>
       </div>
