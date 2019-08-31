@@ -1,35 +1,45 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
-import { Menu, Radio, Dropdown, Button, Icon } from 'antd';
-
+import { useTranslation, withTranslation, WithTranslation } from 'react-i18next';
+import { Menu, Dropdown, Icon, List } from 'antd';
 import './styles.scss';
-const LanguageSelector: React.FC = () => {
-  const { i18n, t } = useTranslation();
 
-  function handleMenuClick(e: any): void {
-    i18n.changeLanguage(e.key);
-  }
+interface IProps extends WithTranslation {
+  style: object;
+}
 
-  const menu = (
-    <Menu onClick={handleMenuClick}>
-      <Menu.Item key='en'>
-        <Icon type='flag' theme='twoTone' />
-        {t('lang.english')}
-      </Menu.Item>
-      <Menu.Item key='fr'>
-        <Icon type='flag' theme='twoTone' />
-        {t('lang.french')}
-      </Menu.Item>
-    </Menu>
-  );
+const LanguageSelector: React.FC<IProps> = ({ style, i18n, t }) => {
+  // const { i18n, t } = useTranslation();
 
   return (
     <div className='language-selector-component'>
-      <Dropdown overlay={menu}>
-        <Icon className='icon-language-selector' type='global' />
-      </Dropdown>
+      <div className='content'>
+        <div className='icon-surrounder'>
+          <Icon
+            className='icon-language-selector'
+            type='global'
+            style={style}
+          />
+        </div>
+        <br />
+        <ul>
+          <li onClick={() => i18n.changeLanguage('en')}>
+            <Icon
+              type='flag'
+              theme={i18n.language === 'en' ? 'filled' : 'outlined'}
+            />{' '}
+            {t('lang.english')}
+          </li>
+          <li onClick={() => i18n.changeLanguage('fr')}>
+            <Icon
+              type='flag'
+              theme={i18n.language === 'fr' ? 'filled' : 'outlined'}
+            />{' '}
+            {t('lang.french')}
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };
 
-export default LanguageSelector;
+export default withTranslation()(LanguageSelector);

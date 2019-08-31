@@ -1,0 +1,26 @@
+@import '../../Styles/_variables.scss';
+
+.profile-component {
+  display: flex;
+
+  .ant-avatar {
+    background-color: $green;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    box-shadow: 5px 4px 4px $medium;
+
+    .ant-avatar-string {
+      transform: scale(1) translateX(-50%);
+    }
+  }
+
+  .avatar {
+    text-align: center;
+  }
+
+  .content {
+    padding: 40px 0 0 50px;
+    font-size: 17px;
+  }
+}

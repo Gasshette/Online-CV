@@ -3,6 +3,18 @@
     "english":"Anglais",
     "french":"Français"
   },
+  "tags":{
+    "react":"React",
+    "angular":"Angular",
+    "csharp": "C#",
+    "fullstack":"FullStack",
+    "architecture":"Architecture",
+    "formation": "Formation",
+    "technological-watch":"Veille technologique",
+    "nodejs": "Node.js",
+    "git":"Git",
+    "gitflow":"GitFlow"
+  },
   "menu": {
     "home": "Accueil",
     "skills": "Compétences",
@@ -11,5 +23,17 @@
   "home": {
     "title": "Qui suis-je ?",
     "presentation": "Cher visiteur bonjour ! Moi c'est Quentin, un jeune développeur fullstack React/C#."
+  },
+  "skills":{
+    "timeline":{
+      "august2019":"### Août 2019 - Autoformation sur React :\n\n*   Les Hooks (React 16.8)\n*   Le Context Api (Stable depuis React 16.3)\n*   La magie du tarvail d'équipe ([Via cet article](https://medium.com/simply/state-management-with-react-hooks-and-context-api-at-10-lines-of-code-baf6be8302c))",
+      "2019":"### 2019 - Développement fullStack\n\n*   Angular : Développement d'évolutions majeures et mineures, correction de bogues\n*   C# : Développement d'évolutions majeure et mineures, correction de bogues",
+      "2018": "### 2018 - Développement fullStack\n\n*   Angular : Prise en main, Développement d'évolutions mineures, correction de bogues\n*   React :\n    *   Développement d'une interface de gestion d'exercices d'entrainement (KATA & DOJO)\n    *   Création d'un POC (Proof Of Concept) concernant React. Objectif : proposer React en tant que technologie viable et focntionnelle pour les besoins du client\n    *   Création d'un projet de formation complète\n*   C# :\n    *   Création des APIs de gestion des exercices d'entrainement (Architecture ONION)\n    *   Développement d'évolutions majeures sur différents sujets\n*   Social : Participation à des présentations sur différents sujets techniques liés au développement et à l'architecture logicielle\n*   Divers :\n    *   Présentations/Formations (format 30 minutes) sur divers sujets (Veille technologique, découverte, etc.)\n    *   Ecriture de conceptions techniques",
+      "2017": "### 2017 - Entrée chez Capgemini\n\n*   C# : Formation et apprentissage du language (.NET framework, ASP.NET, Razor)\n*   Apprentissage de divers outils de développement Front-End : Node.js, Git (Gitflow)",
+      "2016": "### 2016\nRecherche d'emploi",
+      "2015": "### 2015\n\nHotline et période d'essai chez [Isagri](https://www.isagri.fr)",
+      "2013-2015": "### 2013 - 2015\n\nLicence Réseaux et Génie Informatique en alternance chez [La Brosse & Dupont](http://www.lbd.fr/fr) puis CDD de 4 mois",
+      "2011-2013": "### 2011 - 2013\n\nBTS Service Informatiques aux Organisations chez [La Brosse & Dupont](http://www.lbd.fr/fr)"
+    }
   }
 }
