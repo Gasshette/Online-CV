@@ -1,5 +1,5 @@
 import React from 'react';
-import { Timeline, Tag, Icon } from 'antd';
+import { Timeline, Tag } from 'antd';
 import { useTranslation } from 'react-i18next';
 import ReactMarkdown from 'react-markdown';
 import Card from '../Card';
@@ -14,7 +14,7 @@ const Skills = () => {
     const domEl = document.createElement('div');
 
     domEl.innerHTML = renderToString(<ReactMarkdown source={t(key)}/>);
-    title = domEl.getElementsByTagName('h3')[0].innerText;
+    title = domEl.getElementsByTagName('h2')[0].innerText;
 
     return title;
   };

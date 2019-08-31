@@ -9,12 +9,14 @@
     "@types/react-dom": "16.9.0",
     "@types/react-router-dom": "^4.3.5",
     "antd": "^3.22.2",
+    "element-remove": "^1.0.4",
     "i18next": "^17.0.12",
     "i18next-browser-languagedetector": "^3.0.3",
     "i18next-xhr-backend": "^3.1.2",
     "moment": "^2.24.0",
     "node-sass": "^4.12.0",
     "react": "^16.9.0",
+    "react-app-polyfill": "^1.0.2",
     "react-dom": "^16.9.0",
     "react-i18next": "^10.12.2",
     "react-markdown": "^4.1.0",
@@ -34,14 +36,15 @@
   },
   "browserslist": {
     "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
+      "> 1%",
+      "last 2 versions",
+      "not ie <= 8"
     ],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
-      "last 1 safari version"
+      "last 1 safari version",
+      "last 1 IE version"
     ]
   },
   "devDependencies": {}

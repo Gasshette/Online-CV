@@ -5,22 +5,24 @@
 
   .ant-avatar {
     background-color: $green;
-    width: 100px;
-    height: 100px;
-    line-height: 100px;
     box-shadow: 5px 4px 4px $medium;
+    margin-bottom: 50px;
+  }
 
-    .ant-avatar-string {
-      transform: scale(1) translateX(-50%);
+  .logos {
+    text-align: center;
+
+    a {
+      display: block;
+      margin-bottom: 20px;
     }
   }
 
-  .avatar {
-    text-align: center;
-  }
-
   .content {
-    padding: 40px 0 0 50px;
-    font-size: 17px;
+    padding: 0 0 0 50px;
+
+    p {
+      font-size: 21px;
+    }
   }
 }

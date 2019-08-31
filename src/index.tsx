@@ -1,3 +1,6 @@
+import 'react-app-polyfill/ie11';
+import 'react-app-polyfill/stable';
+import 'element-remove';
 import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';

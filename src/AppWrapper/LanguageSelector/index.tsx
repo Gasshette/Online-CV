@@ -8,8 +8,6 @@ interface IProps extends WithTranslation {
 }
 
 const LanguageSelector: React.FC<IProps> = ({ style, i18n, t }) => {
-  // const { i18n, t } = useTranslation();
-
   return (
     <div className='language-selector-component'>
       <div className='content'>
