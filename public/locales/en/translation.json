@@ -21,10 +21,10 @@
   },
   "skills":{
     "timeline":{
-      "august2019":"## August 2019 - Autoformation on React\n\n*   Hooks (React 16.8)\n*   Context Api (Stable since React 16.3)\n*   Teamwork magic ([Through this article](https://medium.com/simply/state-management-with-react-hooks-and-context-api-at-10-lines-of-code-baf6be8302c))",
+      "august2019":"## August 2019 - Self training on React\n\n*   Hooks (React 16.8)\n*   Context Api (Stable since React 16.3)\n*   Teamwork magic ([Through this article](https://medium.com/simply/state-management-with-react-hooks-and-context-api-at-10-lines-of-code-baf6be8302c))",
       "2019": "## 2019 - FullStack development\n\n*   Angular : Major and minor evolutions, bug fixes\n*   C# : Major and minor evolutions, bug fixes",
       "2018": "## 2018 - FullStack development\n\n*   Angular : First step, minor evolutions, bug fixes\n*   React :\n    *   Creation of a training exercices management plateform (KATA & DOJO)\n    *   Creation of a POC (Proof Of Concept) about React. Purpose : propose React as a viable and functional technology for the client's needs\n    *   Creation of a complete formation project, from environnement to Redux\n*   C# :\n    *   Creation of training exercices management APIs (ONION architecture)\n    *   Major evolutions on differents subjects\n*   Social : Participation in presentations about multiple technical subjects related to development and software architecture\n*   Divers :\n    *   Présentations/Formations (30 minutes format) on various subjects (technological watch, discovering, etc.)\n    *   Technical conceptions writing",
-      "2017": "## 2017 - CDI at Capgemini\n\n*   C# : Formation and apprenticeship (.NET framework, ASP.NET, Razor)\n*   Learning few Front-End development tools : Node.js, Git (Gitflow)",
+      "2017": "## 2017 - Full time job at Capgemini\n\n*   C# : Formation and apprenticeship (.NET framework, ASP.NET, Razor)\n*   Learning few Front-End development tools : Node.js, Git (Gitflow)",
       "2016": "## 2016\nJob search",
       "2015": "## 2015\n\nHotline and trial period at [Isagri](https://www.isagri.fr)",
       "2013-2015": "## 2013 - 2015\n\nIT & Network year 3 bachelor, alternating studies at [La Brosse & Dupont](http://www.lbd.fr/en) and then 4 months duration contract",
