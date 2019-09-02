@@ -23,7 +23,7 @@ const Skills = () => {
     <Timeline>
       <Timeline.Item color='gray'>
         <Card title={extractTitle('skills.timeline.august2019')}>
-          <ReactMarkdown source={t('skills.timeline.2019')} />
+          <ReactMarkdown source={t('skills.timeline.august2019')} />
           <div className='tags'>
             <Tag color='blue'>{t('tags.react')}</Tag>
           </div>
@@ -57,7 +57,7 @@ const Skills = () => {
         <Card title={extractTitle('skills.timeline.2017')}>
           <ReactMarkdown source={t('skills.timeline.2017')} />
           <div className='tags'>
-            <Tag color='cyan'>C#</Tag>
+            <Tag color='cyan'>{t('tags.csharp')}</Tag>
             <Tag color={primaryColor}>{t('tags.architecture')}</Tag>
             <Tag color={primaryColor}>{t('tags.formation')}</Tag>
             <Tag color={primaryColor}>{t('tags.nodejs')}</Tag>

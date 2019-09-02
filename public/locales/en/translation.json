@@ -17,11 +17,11 @@
   },
   "profile": {
     "title": "Who am I ?",
-    "presentation": "# Welcome :D \n\nMy name is Quentin GRISEL, a young React/C# fullstack developer.\n\nComing out from an IT & network oriented school formation, I took another path as developer, on the one hand because I was really bad at network stuff (Yeah, really), and on the other hand because this is the thing that gives me most satisfaction. Here is the reason why i started developping at the age of 14 ! It gives me pleasure so why not ? :) \n\nI mainly master /react/ et le /csharp/."
+    "presentation": "# Welcome :D \n\nMy name is Quentin GRISEL, a young React/C# fullstack developer.\n\nComing out from an IT & network oriented school formation, I took another path as developer because this is the thing that gives me most satisfaction. Here is the reason why i started developping at the age of 14 ! It gives me pleasure so why not ? :) \n\nI mainly master /react/ et le /csharp/."
   },
   "skills":{
     "timeline":{
-      "august2019":"## August 2019 - Autoformation on React :\n\n*   Hooks (React 16.8)\n*   Context Api (Stable since React 16.3)\n*   Teamwork magic ([Through this article](https://medium.com/simply/state-management-with-react-hooks-and-context-api-at-10-lines-of-code-baf6be8302c))",
+      "august2019":"## August 2019 - Autoformation on React\n\n*   Hooks (React 16.8)\n*   Context Api (Stable since React 16.3)\n*   Teamwork magic ([Through this article](https://medium.com/simply/state-management-with-react-hooks-and-context-api-at-10-lines-of-code-baf6be8302c))",
       "2019": "## 2019 - FullStack development\n\n*   Angular : Major and minor evolutions, bug fixes\n*   C# : Major and minor evolutions, bug fixes",
       "2018": "## 2018 - FullStack development\n\n*   Angular : First step, minor evolutions, bug fixes\n*   React :\n    *   Creation of a training exercices management plateform (KATA & DOJO)\n    *   Creation of a POC (Proof Of Concept) about React. Purpose : propose React as a viable and functional technology for the client's needs\n    *   Creation of a complete formation project, from environnement to Redux\n*   C# :\n    *   Creation of training exercices management APIs (ONION architecture)\n    *   Major evolutions on differents subjects\n*   Social : Participation in presentations about multiple technical subjects related to development and software architecture\n*   Divers :\n    *   Présentations/Formations (30 minutes format) on various subjects (technological watch, discovering, etc.)\n    *   Technical conceptions writing",
       "2017": "## 2017 - CDI at Capgemini\n\n*   C# : Formation and apprenticeship (.NET framework, ASP.NET, Razor)\n*   Learning few Front-End development tools : Node.js, Git (Gitflow)",
