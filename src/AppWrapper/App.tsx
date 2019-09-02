@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { Row, Col, Affix, BackTop } from 'antd';
 import Skills from '../Components/Skills';
 import Profile from '../Components/Profile';
@@ -52,7 +52,9 @@ class App extends React.Component {
           </Col>
         </Row>
 
-        <BackTop />
+        <span className='back-top'>
+          <BackTop />
+        </span>
       </div>
     );
   }

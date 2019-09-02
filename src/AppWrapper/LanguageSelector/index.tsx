@@ -1,6 +1,6 @@
 import React from 'react';
-import { useTranslation, withTranslation, WithTranslation } from 'react-i18next';
-import { Menu, Dropdown, Icon, List } from 'antd';
+import { withTranslation, WithTranslation } from 'react-i18next';
+import { Icon } from 'antd';
 import './styles.scss';
 
 interface IProps extends WithTranslation {
