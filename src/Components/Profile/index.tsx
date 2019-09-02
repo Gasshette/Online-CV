@@ -1,10 +1,12 @@
 import React from 'react';
 import { WithTranslation, withTranslation } from 'react-i18next';
-import { Avatar, Popover, Rate, Tag, Icon } from 'antd';
+import { Avatar, Tag, Icon } from 'antd';
 import ReactMarkdown from 'react-markdown';
-import { renderToString, renderToNodeStream } from 'react-dom/server';
+import { renderToString } from 'react-dom/server';
 
 import './styles.scss';
+import './stylesSmallScreen.scss';
+
 
 interface IProfile extends WithTranslation {}
 
