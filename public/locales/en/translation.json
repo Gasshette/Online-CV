@@ -17,7 +17,7 @@
   },
   "profile": {
     "title": "Who am I ?",
-    "presentation": "# Welcome :D \n\nMy name is Quentin GRISEL, a young React/C# fullstack developer.\n\nComing out from an IT & network oriented school formation, I took another path as developer because this is the thing that gives me most satisfaction. Here is the reason why i started developping at the age of 14 ! It gives me pleasure so why not ? :) \n\nI mainly master /react/ and /csharp/."
+    "presentation": "# Welcome \n\nMy name is Quentin GRISEL, a  /react/ and /csharp/ fullstack developer.\n\nComing out from an IT & network oriented school formation, I took another path as developer because this is the thing that gives me most satisfaction. Here is the reason why i started developping at the age of 14 ! It gives me pleasure so why not ? :)"
   },
   "skills":{
     "timeline":{
@@ -27,7 +27,7 @@
       "2017": "## 2017 - Full time job at Capgemini\n\n*   C# : Formation and apprenticeship (.NET framework, ASP.NET, Razor)\n*   Learning few Front-End development tools : Node.js, Git (Gitflow)",
       "2016": "## 2016\nJob search",
       "2015": "## 2015\n\nHotline and trial period at [Isagri](https://www.isagri.fr)",
-      "2013-2015": "## 2013 - 2015\n\nIT & Network year 3 bachelor, alternating studies at [La Brosse & Dupont](http://www.lbd.fr/en) and then 4 months duration contract",
+      "2013-2015": "## 2013 - 2015\n\nIT & Network year 3 bachelor, alternating studies at [La Brosse & Dupont](http://www.lbd.fr/en) followed by 4 months duration contract",
       "2011-2013": "## 2011 - 2013\n\nIT & Network year 1 & 2 bachelor, alternating studies at [La Brosse & Dupont](http://www.lbd.fr/en)"
     }
   },

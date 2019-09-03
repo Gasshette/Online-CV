@@ -17,7 +17,7 @@
   },
   "profile": {
     "title": "Qui suis-je ?",
-    "presentation": "#  Bienvenu :D \n\nMoi c'est Quentin GRISEL, un jeune développeur fullstack.\n\nSorti d'un cursus orienté IT et réseau, je me suis redirigé vers le développement car cette branche est celle qui m'apporte le plus de satisfaction. Si je développe depuis que j'ai 14 ans environ, ce n'est pas pour rien ! J'y prend du plaisir alors pourquoi m'en priver ? :) \n\nJe maitrise principalement le /react/ et le /csharp/."
+    "presentation": "#  Bienvenu \n\nMoi c'est Quentin GRISEL, développeur fullstack /react/ et /csharp/.\n\nSorti d'un cursus orienté IT et réseau, je me suis redirigé vers le développement car cette branche est celle qui m'apporte le plus de satisfaction. Si je développe depuis que j'ai 14 ans environ, ce n'est pas pour rien ! J'y prend du plaisir alors pourquoi m'en priver ? :)"
   },
   "skills":{
     "timeline":{
@@ -27,7 +27,7 @@
       "2017": "## 2017 - Entrée chez Capgemini\n\n*   C# : Formation et apprentissage du language (.NET framework, ASP.NET, Razor)\n*   Apprentissage de divers outils de développement Front-End : Node.js, Git (Gitflow)",
       "2016": "## 2016\nRecherche d'emploi",
       "2015": "## 2015\n\nHotline et période d'essai chez [Isagri](https://www.isagri.fr)",
-      "2013-2015": "## 2013 - 2015\n\nLicence Réseaux et Génie Informatique en alternance chez [La Brosse & Dupont](http://www.lbd.fr/fr) puis CDD de 4 mois",
+      "2013-2015": "## 2013 - 2015\n\nLicence Réseaux et Génie Informatique en alternance chez [La Brosse & Dupont](http://www.lbd.fr/fr) suivi d'un CDD de 4 mois",
       "2011-2013": "## 2011 - 2013\n\nBTS Service Informatiques aux Organisations chez [La Brosse & Dupont](http://www.lbd.fr/fr)"
     }
   },
