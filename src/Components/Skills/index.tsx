@@ -5,15 +5,16 @@ import ReactMarkdown from 'react-markdown';
 import Card from '../Card';
 import { renderToString } from 'react-dom/server';
 
+export const primaryColor = '#424242';
+
 const Skills = () => {
   const { t } = useTranslation();
-  const primaryColor = '#424242';
 
   const extractTitle = (key: string) => {
     let title: string = '';
     const domEl = document.createElement('div');
 
-    domEl.innerHTML = renderToString(<ReactMarkdown source={t(key)}/>);
+    domEl.innerHTML = renderToString(<ReactMarkdown source={t(key)} />);
     title = domEl.getElementsByTagName('h2')[0].innerText;
 
     return title;
@@ -21,6 +22,17 @@ const Skills = () => {
 
   return (
     <Timeline>
+      <Timeline.Item color='gray'>
+        <Card title={extractTitle('skills.timeline.november2019')}>
+          <ReactMarkdown source={t('skills.timeline.november2019')} />
+          <div className='tags'>
+            <Tag color='red'>{t('tags.angular')}</Tag>
+            <Tag color={primaryColor}>{t('tags.ngrx')}</Tag>
+            <Tag color={primaryColor}>{t('tags.rxjs')}</Tag>
+            <Tag color={primaryColor}>{t('tags.lodash')}</Tag>
+          </div>
+        </Card>
+      </Timeline.Item>
       <Timeline.Item color='gray'>
         <Card title={extractTitle('skills.timeline.august2019')}>
           <ReactMarkdown source={t('skills.timeline.august2019')} />

@@ -3,6 +3,7 @@ import { WithTranslation, withTranslation } from 'react-i18next';
 import { Avatar, Tag, Icon } from 'antd';
 import ReactMarkdown from 'react-markdown';
 import { renderToString } from 'react-dom/server';
+import { primaryColor } from '../Skills';
 
 import './styles.scss';
 import './stylesSmallScreen.scss';
@@ -11,12 +12,12 @@ import './stylesSmallScreen.scss';
 interface IProfile extends WithTranslation {}
 
 class Profile extends React.Component<IProfile> {
-  private contentRef = React.createRef<HTMLDivElement>();
+  private componentRef = React.createRef<HTMLDivElement>();
 
   constructor(props: any) {
     super(props);
 
-    this.contentRef = React.createRef<HTMLDivElement>();
+    this.componentRef = React.createRef<HTMLDivElement>();
 
     this.tag = this.tag.bind(this);
     this.setContent = this.setContent.bind(this);
@@ -35,13 +36,15 @@ class Profile extends React.Component<IProfile> {
       <ReactMarkdown source={this.props.t('profile.presentation')} />
     );
 
-    let contentNode = this.contentRef.current;
+    let componentNode = this.componentRef.current;
 
-    if (contentNode) {
-      const truc = contentNode.getElementsByClassName('content');
-      truc[truc.length - 1].innerHTML = text
+    if (componentNode) {
+      const contentNodes = componentNode.getElementsByClassName('content');
+      contentNodes[contentNodes.length - 1].innerHTML = text
         .replace('/react/', this.tag('react', 'blue'))
-        .replace('/csharp/', this.tag('csharp', 'cyan'));
+        .replace('/angular/', this.tag('angular', 'red'))
+        .replace('/csharp/', this.tag('csharp', 'cyan'))
+        .replace('/fullstack/', this.tag('fullstack', primaryColor));
     }
   }
 
@@ -53,7 +56,7 @@ class Profile extends React.Component<IProfile> {
 
   render() {
     return (
-      <div className='profile-component' ref={this.contentRef}>
+      <div className='profile-component' ref={this.componentRef}>
         <div className='logos'>
           <span className='avatar'>
             <Avatar size={100} icon='user' />

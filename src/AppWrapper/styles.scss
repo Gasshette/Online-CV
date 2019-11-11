@@ -1,0 +1,40 @@
+@import '~antd/dist/antd.css';
+@import '../Styles/_variables.scss';
+
+.app {
+  padding: 30px 50px;
+  background-color: $primary;
+}
+
+.ant-col {
+  &:not(.col-menu) {
+    border-radius: 5px;
+    padding: 20px 50px;
+  }
+}
+
+.col-menu {
+  text-align: center;
+}
+
+.col-profile, .col-skills {
+  background-color: $secondary;
+  box-shadow: 5px 4px 4px $dark;
+
+}
+
+.language {
+  font-style: italic;
+}
+
+.red {
+  color : $red;
+}
+
+.blue {
+  color: $blue;
+}
+
+.cyan {
+  color: $cyan;
+}
