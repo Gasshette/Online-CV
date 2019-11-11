@@ -1,0 +1,15 @@
+@media screen and (max-width: 992px){
+  .app {
+    padding: 10px;
+  }
+
+  .ant-col {
+    margin-bottom: 10px;
+
+    &:not(.col-menu) {
+      border-radius: 5px;
+      padding: 15px;
+    }
+  }
+
+}

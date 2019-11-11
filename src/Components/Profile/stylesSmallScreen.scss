@@ -1,0 +1,22 @@
+@media screen and (max-width: 992px) {
+  .profile-component {
+    display: block;
+
+    .avatar {
+      display: none;
+    }
+
+    .logos {
+      display: flex;
+      justify-content: flex-start;
+
+      a:last-child{
+        margin-left: 20px;
+      }
+    }
+
+    .content {
+      padding: 0px;
+    }
+  }
+}
