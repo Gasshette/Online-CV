@@ -25,6 +25,10 @@
   },
   "skills":{
     "timeline":{
+      "August2021": "## August 2021 - Api implementation in .NET Core 3.1 (Onion architecture)\n*   Creation of Api to read/write object in a no SQL database (CosmosDb)",
+      "october2020": "## October 2019 - Evolution/Maintenance/Creation of application in Angular (4, 9), C# and ASP (+JQuery)\n*   Pressing evolutions (For legal reasons) of an application in Angular 4 and C#\n*   Evolution/Maintenance of the previously said application\n*   Evolutions/maintenance of an ASP application\n*   Creation of a front-end application in Angular 9 to replace an old one made with MatLab (Read/write files, graphic display with PlotlyJs)\n*   Implementation of Git good practices (Gitflow)",
+      "october2020-1week": "## October 2019 - Graphic help on a responsive React web application\nA non deliverable application was in need of a few pressing graphic updates",
+
       "november2019": "## November 2019 - From scratch creation of a new angular 8 project \n\n*  Discovery and set up of a state management: [ngrx](https://ngrx.io/docs)\n*  Self-learning of angular reactive programmation (ngrx is based on [rxjs](https://rxjs.dev/guide/overview))",
       "august2019":"## August 2019 - Self training on React\n\n*   Hooks (React 16.8)\n*   Context Api (Stable since React 16.3)\n*   Teamwork magic ([Through this article](https://medium.com/simply/state-management-with-react-hooks-and-context-api-at-10-lines-of-code-baf6be8302c))",
       "2019": "## 2019 - FullStack development\n\n*   Angular : Major and minor evolutions, bug fixes\n*   C# : Major and minor evolutions, bug fixes",
