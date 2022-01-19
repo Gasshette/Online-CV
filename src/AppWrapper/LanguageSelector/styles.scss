@@ -4,6 +4,11 @@
   position: relative;
   margin-top: -15px;
 
+  .content {
+    width: 115px;
+    margin: auto;
+  }
+
   .icon-language-selector {
     position: relative;
     z-index: 2;
@@ -12,7 +17,6 @@
     color: $green;
     border-radius: 50%;
     box-shadow: 5px 4px 4px $dark;
-
   }
 
   .icon-surrounder {
@@ -25,31 +29,39 @@
     background-color: $primary;
   }
 
-  ul {
-    display: inline-block;
-    position: relative;
-    width: 100px; // 80px img + 20px padding left/right surrounder
-    padding: 0 0 0 0;
+  .lang-list-surrounder {
     max-height: 0;
-    margin-top: -90px;
+    width: 100px; // 80px img + 20px padding left/right surrounder
+    margin: auto;
+    margin-top: -50px;
+    padding: 0;
+    overflow: hidden;
     background-color: $secondary;
-    border-radius: 60px;
-    list-style-type: none;
-    z-index: 1;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
     box-shadow: 5px 4px 4px $dark;
 
+    transition-property: max-height, padding-top, padding-bottom;
+    transition-duration: 1s, 1s, 1s;
+  }
 
-    transition:
-      max-height 0.5s,
-      padding 0.3s;
+  .content:hover .lang-list-surrounder {
+    max-height: 200px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+
+  ul {
+    padding: 0; // Remove the default padding on the left side
+
+    background-color: $secondary;
+    list-style-type: none;
+    z-index: 1;
 
     li {
       display: inline-block;
-      opacity: 0;
-      padding: 5px;
       text-align: center;
       border-bottom: 1px solid $clear;
-      transition: opacity 0.3s linear;
       width: 100%;
 
       &:not(:last-child) {
@@ -61,21 +73,6 @@
         background-color: $green;
         color: $clear;
       }
-    }
-  }
-
-  .content {
-    width: 115px;
-    margin: auto;
-  }
-  .content:hover > ul {
-    max-height: 100%;
-    padding-top: 100px;
-    padding-bottom: 45px;
-
-    & li {
-      opacity: 1;
-      transition: opacity 0.5s 0.3s;
     }
   }
 }
