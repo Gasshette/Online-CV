@@ -23,6 +23,32 @@ const Skills = () => {
   return (
     <Timeline>
       <Timeline.Item color='gray'>
+        <Card title={extractTitle('skills.timeline.August2021')}>
+          <ReactMarkdown source={t('skills.timeline.August2021')} />
+          <div className='tags'>
+          <Tag color='cyan'>{t('tags.csharp')}</Tag>
+          <Tag color={primaryColor}>{t('tags.architecture')}</Tag>
+          </div>
+        </Card>
+      </Timeline.Item>
+      <Timeline.Item color='gray'>
+        <Card title={extractTitle('skills.timeline.october2020')}>
+          <ReactMarkdown source={t('skills.timeline.october2020')} />
+          <div className='tags'>
+          <Tag color='red'>{t('tags.angular')}</Tag>
+          <Tag color='cyan'>{t('tags.csharp')}</Tag>
+          </div>
+        </Card>
+      </Timeline.Item>
+      <Timeline.Item color='gray'>
+        <Card title={extractTitle('skills.timeline.october2020-1week')}>
+          <ReactMarkdown source={t('skills.timeline.october2020-1week')} />
+          <div className='tags'>
+          <Tag color='blue'>{t('tags.react')}</Tag>
+          </div>
+        </Card>
+      </Timeline.Item>
+      <Timeline.Item color='gray'>
         <Card title={extractTitle('skills.timeline.november2019')}>
           <ReactMarkdown source={t('skills.timeline.november2019')} />
           <div className='tags'>
