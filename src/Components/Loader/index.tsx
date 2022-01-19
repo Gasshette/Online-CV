@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Loader: React.FC = () => {
+const Loader = () => {
   return (
     <div>Loading... please wait.</div>
   )

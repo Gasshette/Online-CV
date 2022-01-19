@@ -4,10 +4,10 @@ import 'element-remove';
 import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './AppWrapper/App';
 import * as serviceWorker from './serviceWorker';
 import './i18n';
 import Loader from './Components/Loader';
+import App from './AppWrapper/app';
 
 ReactDOM.render(
   <Suspense fallback={<Loader/>}>

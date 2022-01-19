@@ -2,7 +2,7 @@ import React from 'react';
 import { Timeline, Tag } from 'antd';
 import { useTranslation } from 'react-i18next';
 import ReactMarkdown from 'react-markdown';
-import Card from '../Card';
+import Card from '../Card/card';
 import { renderToString } from 'react-dom/server';
 
 export const primaryColor = '#424242';
