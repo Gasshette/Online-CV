@@ -3,7 +3,7 @@
 
 .app {
   padding: 30px 50px;
-  background-color: $primary;
+  background-color: $clear;
 }
 
 .ant-col {
@@ -15,12 +15,6 @@
 
 .col-menu {
   text-align: center;
-}
-
-.col-profile, .col-skills {
-  background-color: $secondary;
-  box-shadow: 5px 4px 4px $dark;
-
 }
 
 .language {

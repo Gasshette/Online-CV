@@ -1,8 +1,8 @@
 import React from 'react';
 import { Row, Col, Affix, BackTop } from 'antd';
-import Skills from '../Components/Skills';
+import Skills from '../Components/Skills/skills';
 import Profile from '../Components/Profile/profile';
-import LanguageSelector from './LanguageSelector';
+import LanguageSelector from './LanguageSelector/language-selector';
 import './app.scss';
 import './app-small-screen.scss';
 
