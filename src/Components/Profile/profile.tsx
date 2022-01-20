@@ -3,7 +3,8 @@ import { WithTranslation, withTranslation } from 'react-i18next';
 import { Avatar, Tag, Icon } from 'antd';
 import ReactMarkdown from 'react-markdown';
 import { renderToString } from 'react-dom/server';
-import { primaryColor } from '../Skills';
+import { primaryColor } from '../Skills/skills';
+import pp from '../../assets/images/profile-pic.jpeg';
 
 import './profile.scss';
 import './profile-small-screen.scss';
@@ -45,7 +46,7 @@ const Profile = (props: IProfile) => {
     <div className='profile-component' ref={componentRef}>
         <div className='logos'>
           <span className='avatar'>
-            <Avatar size={100} icon='user' />
+            <Avatar size={100} src={pp} />
           </span>
           <a href='https://www.linkedin.com/in/quentin-grisel-587542134'>
             <Icon type='linkedin' theme='filled' style={{ fontSize: '50px' }} />

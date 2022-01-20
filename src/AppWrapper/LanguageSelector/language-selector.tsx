@@ -1,7 +1,7 @@
 import React from 'react';
 import { withTranslation, WithTranslation } from 'react-i18next';
 import { Icon } from 'antd';
-import './styles.scss';
+import './language-selector.scss';
 
 interface IProps extends WithTranslation {
   style: object;
