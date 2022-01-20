@@ -14,9 +14,8 @@
     z-index: 2;
     cursor: pointer;
     font-size: 80px !important;
-    color: $green;
+    color: $primary;
     border-radius: 50%;
-    box-shadow: 5px 4px 4px $dark;
   }
 
   .icon-surrounder {
@@ -26,7 +25,7 @@
     display: inline-block;
     padding: 15px;
     border-radius: 60px;
-    background-color: $primary;
+    background-color: $clear;
   }
 
   .lang-list-surrounder {
@@ -36,10 +35,9 @@
     margin-top: -50px;
     padding: 0;
     overflow: hidden;
-    background-color: $secondary;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
-    box-shadow: 5px 4px 4px $dark;
+    box-shadow: 3px 3px 3px $dark;
 
     transition-property: max-height, padding-top, padding-bottom;
     transition-duration: 1s, 1s, 1s;
@@ -53,8 +51,6 @@
 
   ul {
     padding: 0; // Remove the default padding on the left side
-
-    background-color: $secondary;
     list-style-type: none;
     z-index: 1;
 
@@ -70,8 +66,7 @@
 
       &:hover {
         cursor: pointer;
-        background-color: $green;
-        color: $clear;
+        color: $primary;
       }
     }
   }
