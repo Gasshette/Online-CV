@@ -1,6 +1,7 @@
 import React from 'react';
 import { WithTranslation, withTranslation } from 'react-i18next';
-import { Avatar, Tag, Icon } from 'antd';
+import { Avatar, Tag } from 'antd';
+import { LinkedinFilled, GithubFilled } from '@ant-design/icons';
 import ReactMarkdown from 'react-markdown';
 import { renderToString } from 'react-dom/server';
 import { primaryColor } from '../Skills/skills';
@@ -10,7 +11,7 @@ import './profile.scss';
 import './profile-small-screen.scss';
 
 
-interface IProfile extends WithTranslation {}
+interface IProfile extends WithTranslation { }
 
 const Profile = (props: IProfile) => {
   const componentRef = React.createRef<HTMLDivElement>();
@@ -21,7 +22,7 @@ const Profile = (props: IProfile) => {
 
   const setContent = () => {
     let text = renderToString(
-      <ReactMarkdown source={props.t('profile.presentation')} />
+      <ReactMarkdown children={props.t('profile.presentation')} />
     );
 
     let componentNode = componentRef.current;
@@ -44,19 +45,19 @@ const Profile = (props: IProfile) => {
 
   return (
     <div className='profile-component' ref={componentRef}>
-        <div className='logos'>
-          <span className='avatar'>
-            <Avatar size={100} src={pp} />
-          </span>
-          <a href='https://www.linkedin.com/in/quentin-grisel-587542134'>
-            <Icon type='linkedin' theme='filled' style={{ fontSize: '50px' }} />
-          </a>
-          <a href='https://github.com/Gasshette'>
-            <Icon type='github' theme='filled' style={{ fontSize: '50px' }} />
-          </a>
-        </div>
-        <div className='content'></div>
+      <div className='logos'>
+        <span className='avatar'>
+          <Avatar size={100} src={pp} />
+        </span>
+        <a href='https://www.linkedin.com/in/quentin-grisel-587542134'>
+          <LinkedinFilled style={{ fontSize: '50px' }} />
+        </a>
+        <a href='https://github.com/Gasshette'>
+          <GithubFilled style={{ fontSize: '50px' }} />
+        </a>
       </div>
+      <div className='content'></div>
+    </div>
   )
 }
 

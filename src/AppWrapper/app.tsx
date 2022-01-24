@@ -8,39 +8,39 @@ import './app-small-screen.scss';
 
 const App = () => {
   const [isDesktop, setIsDesktop] = React.useState(false);
-React.useEffect(() => {
+  React.useEffect(() => {
 
-  // Size is defined by the component : https://ant.design/components/grid/#Col
-  setIsDesktop(window.innerWidth > 992);
-}, []);
+    // Size is defined by the component : https://ant.design/components/grid/#Col
+    setIsDesktop(window.innerWidth > 992);
+  }, []);
 
-  return(
+  return (
     <div className='app'>
-        <Row type='flex' style={{ alignItems: 'strech' }}>
-          {!isDesktop && (
-            <Col span={24} className='col-menu'>
+      <Row style={{ alignItems: 'strech' }}>
+        {!isDesktop && (
+          <Col span={24} className='col-menu'>
+            <LanguageSelector style={{ fontSize: '40px' }} />
+          </Col>
+        )}
+        <Col xs={24} lg={10} className='col-profile'>
+          <Profile />
+        </Col>
+        {isDesktop && (
+          <Col span={4} className='col-menu'>
+            <Affix offsetTop={30}>
               <LanguageSelector style={{ fontSize: '40px' }} />
-            </Col>
-          )}
-          <Col xs={24} lg={10} className='col-profile'>
-            <Profile />
+            </Affix>
           </Col>
-          {isDesktop && (
-            <Col span={4} className='col-menu'>
-              <Affix offsetTop={30}>
-                <LanguageSelector style={{ fontSize: '40px' }} />
-              </Affix>
-            </Col>
-          )}
-          <Col xs={24} lg={10} className='col-skills'>
-            <Skills />
-          </Col>
-        </Row>
+        )}
+        <Col xs={24} lg={10} className='col-skills'>
+          <Skills />
+        </Col>
+      </Row>
 
-        <span className='back-top'>
-          <BackTop />
-        </span>
-      </div>
+      <span className='back-top'>
+        <BackTop />
+      </span>
+    </div>
   )
 }
 

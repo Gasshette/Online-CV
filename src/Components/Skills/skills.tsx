@@ -14,7 +14,7 @@ const Skills = () => {
     let title: string = '';
     const domEl = document.createElement('div');
 
-    domEl.innerHTML = renderToString(<ReactMarkdown source={t(key)} />);
+    domEl.innerHTML = renderToString(<ReactMarkdown children={t(key)} />);
     title = domEl.getElementsByTagName('h2')[0].innerText;
 
     return title;
@@ -24,33 +24,33 @@ const Skills = () => {
     <Timeline>
       <Timeline.Item color='gray'>
         <Card title={extractTitle('skills.timeline.August2021')}>
-          <ReactMarkdown source={t('skills.timeline.August2021')} />
+          <ReactMarkdown children={t('skills.timeline.August2021')} />
           <div className='tags'>
-          <Tag color='cyan'>{t('tags.csharp')}</Tag>
-          <Tag color={primaryColor}>{t('tags.architecture')}</Tag>
+            <Tag color='cyan'>{t('tags.csharp')}</Tag>
+            <Tag color={primaryColor}>{t('tags.architecture')}</Tag>
           </div>
         </Card>
       </Timeline.Item>
       <Timeline.Item color='gray'>
         <Card title={extractTitle('skills.timeline.october2020')}>
-          <ReactMarkdown source={t('skills.timeline.october2020')} />
+          <ReactMarkdown children={t('skills.timeline.october2020')} />
           <div className='tags'>
-          <Tag color='red'>{t('tags.angular')}</Tag>
-          <Tag color='cyan'>{t('tags.csharp')}</Tag>
+            <Tag color='red'>{t('tags.angular')}</Tag>
+            <Tag color='cyan'>{t('tags.csharp')}</Tag>
           </div>
         </Card>
       </Timeline.Item>
       <Timeline.Item color='gray'>
         <Card title={extractTitle('skills.timeline.october2020-1week')}>
-          <ReactMarkdown source={t('skills.timeline.october2020-1week')} />
+          <ReactMarkdown children={t('skills.timeline.october2020-1week')} />
           <div className='tags'>
-          <Tag color='blue'>{t('tags.react')}</Tag>
+            <Tag color='blue'>{t('tags.react')}</Tag>
           </div>
         </Card>
       </Timeline.Item>
       <Timeline.Item color='gray'>
         <Card title={extractTitle('skills.timeline.november2019')}>
-          <ReactMarkdown source={t('skills.timeline.november2019')} />
+          <ReactMarkdown children={t('skills.timeline.november2019')} />
           <div className='tags'>
             <Tag color='red'>{t('tags.angular')}</Tag>
             <Tag color={primaryColor}>{t('tags.ngrx')}</Tag>
@@ -61,7 +61,7 @@ const Skills = () => {
       </Timeline.Item>
       <Timeline.Item color='gray'>
         <Card title={extractTitle('skills.timeline.august2019')}>
-          <ReactMarkdown source={t('skills.timeline.august2019')} />
+          <ReactMarkdown children={t('skills.timeline.august2019')} />
           <div className='tags'>
             <Tag color='blue'>{t('tags.react')}</Tag>
           </div>
@@ -69,7 +69,7 @@ const Skills = () => {
       </Timeline.Item>
       <Timeline.Item color='gray'>
         <Card title={extractTitle('skills.timeline.2019')}>
-          <ReactMarkdown source={t('skills.timeline.2019')} />
+          <ReactMarkdown children={t('skills.timeline.2019')} />
           <div className='tags'>
             <Tag color='red'>{t('tags.angular')}</Tag>
             <Tag color='cyan'>{t('tags.csharp')}</Tag>
@@ -79,7 +79,7 @@ const Skills = () => {
       </Timeline.Item>
       <Timeline.Item color='gray'>
         <Card title={extractTitle('skills.timeline.2018')}>
-          <ReactMarkdown source={t('skills.timeline.2018')} />
+          <ReactMarkdown children={t('skills.timeline.2018')} />
           <div className='tags'>
             <Tag color='red'>{t('tags.angular')}</Tag>
             <Tag color='blue'>{t('tags.react')}</Tag>
@@ -93,7 +93,7 @@ const Skills = () => {
       </Timeline.Item>
       <Timeline.Item color='gray'>
         <Card title={extractTitle('skills.timeline.2017')}>
-          <ReactMarkdown source={t('skills.timeline.2017')} />
+          <ReactMarkdown children={t('skills.timeline.2017')} />
           <div className='tags'>
             <Tag color='cyan'>{t('tags.csharp')}</Tag>
             <Tag color={primaryColor}>{t('tags.architecture')}</Tag>
@@ -106,22 +106,22 @@ const Skills = () => {
       </Timeline.Item>
       <Timeline.Item color='gray'>
         <Card title={extractTitle('skills.timeline.2016')}>
-          <ReactMarkdown source={t('skills.timeline.2016')} />
+          <ReactMarkdown children={t('skills.timeline.2016')} />
         </Card>
       </Timeline.Item>
       <Timeline.Item color='gray'>
         <Card title={extractTitle('skills.timeline.2015')}>
-          <ReactMarkdown source={t('skills.timeline.2015')} />
+          <ReactMarkdown children={t('skills.timeline.2015')} />
         </Card>
       </Timeline.Item>
       <Timeline.Item color='gray'>
         <Card title={extractTitle('skills.timeline.2013-2015')}>
-          <ReactMarkdown source={t('skills.timeline.2013-2015')} />
+          <ReactMarkdown children={t('skills.timeline.2013-2015')} />
         </Card>
       </Timeline.Item>
       <Timeline.Item color='gray'>
         <Card title={extractTitle('skills.timeline.2011-2013')}>
-          <ReactMarkdown source={t('skills.timeline.2011-2013')} />
+          <ReactMarkdown children={t('skills.timeline.2011-2013')} />
         </Card>
       </Timeline.Item>
     </Timeline>
