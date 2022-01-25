@@ -27,9 +27,11 @@ const App = () => {
           </Col>
         )}
         <Col xs={24} lg={10} className='col-profile'>
-          <WithAnimation animation="animate__fadeInLeft">
-            <Profile />
-          </WithAnimation>
+          <Affix offsetTop={50}>
+            <WithAnimation animation="animate__fadeInLeft">
+              <Profile />
+            </WithAnimation>
+          </Affix>
         </Col>
         {isDesktop && (
           <Col span={4} className='col-menu'>
