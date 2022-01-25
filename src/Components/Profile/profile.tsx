@@ -1,5 +1,5 @@
 import React from 'react';
-import { WithTranslation, withTranslation } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 import { Avatar, Tag } from 'antd';
 import { LinkedinFilled, GithubFilled } from '@ant-design/icons';
 import ReactMarkdown from 'react-markdown';
@@ -9,42 +9,41 @@ import pp from '../../assets/images/profile-pic.jpeg';
 
 import './profile.scss';
 import './profile-small-screen.scss';
+import TextWriter from '../TextWriter/text-writer';
 
+const Profile = () => {
+  const [t, i18n] = useTranslation();
 
-interface IProfile extends WithTranslation { }
-
-const Profile = (props: IProfile) => {
-  const componentRef = React.createRef<HTMLDivElement>();
+  const [description, setDescription] = React.useState<string>();
+  React.useEffect(() => {
+    setContent();
+  }, []);
 
   React.useEffect(() => {
     setContent();
-  });
+  }, [i18n.language]);
 
   const setContent = () => {
     let text = renderToString(
-      <ReactMarkdown children={props.t('profile.presentation')} />
+      <ReactMarkdown children={t('profile.presentation')} components={{ p: "span" }} />
     );
 
-    let componentNode = componentRef.current;
-
-    if (componentNode) {
-      const contentNodes = componentNode.getElementsByClassName('content');
-      contentNodes[contentNodes.length - 1].innerHTML = text
-        .replace('/react/', tag('react', 'blue'))
-        .replace('/angular/', tag('angular', 'red'))
-        .replace('/csharp/', tag('csharp', 'cyan'))
-        .replace('/fullstack/', tag('fullstack', primaryColor));
-    }
+    setDescription(text
+      .replace('/react/', tag('react', 'blue'))
+      .replace('/angular/', tag('angular', 'red'))
+      .replace('/csharp/', tag('csharp', 'cyan'))
+      .replace('/fullstack/', tag('fullstack', primaryColor))
+    );
   }
 
   const tag = (endOfKey: string, color: string) => {
     return renderToString(
-      <Tag color={color}>{props.t(`tags.${endOfKey}`)}</Tag>
+      <Tag color={color}>{t(`tags.${endOfKey}`)}</Tag>
     );
   }
 
   return (
-    <div className='profile-component' ref={componentRef}>
+    <div className='profile-component'>
       <div className='logos'>
         <span className='avatar'>
           <Avatar size={100} src={pp} />
@@ -56,9 +55,11 @@ const Profile = (props: IProfile) => {
           <GithubFilled style={{ fontSize: '50px' }} />
         </a>
       </div>
-      <div className='content'></div>
+      <div className="content">
+        {description && <TextWriter text={description} speed={30} />}
+      </div>
     </div>
   )
 }
 
-export default withTranslation()(Profile);
+export default Profile;

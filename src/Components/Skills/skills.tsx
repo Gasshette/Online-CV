@@ -15,7 +15,7 @@ const Skills = () => {
     const domEl = document.createElement('div');
 
     domEl.innerHTML = renderToString(<ReactMarkdown children={t(key)} />);
-    title = domEl.getElementsByTagName('h2')[0].innerText;
+    title = domEl.getElementsByTagName('h2')[0]?.innerText;
 
     return title;
   };
