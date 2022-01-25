@@ -4,24 +4,21 @@ import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import moment from 'moment';
 
-import 'moment/locale/fr';
-import 'moment/locale/en-gb';
-
 const fallbackLng = ['fr'];
 const availableLanguages = ['fr', 'en'];
 
-// availableLanguages.forEach((element) => {
-//   if (element !== 'en') {
-//     import(`moment/locale/${element}`);
-//   }
-// });
+availableLanguages.forEach((element) => {
+  if (element !== 'en') {
+    import(`moment/locale/${element}`);
+  }
+});
 
 i18n
   .use(Backend)
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    lng: 'en',
+    lng: 'fr',
     whitelist: availableLanguages,
     fallbackLng,
     debug: true,
@@ -36,7 +33,7 @@ i18n
       } //if the format is 'currentDate', then take its __value__ transfom it to a moment object, translate it to the current language and show it in Month DD, YYYY format.
     },
     react: {
-      wait: true
+      wait: true,
     }
   });
 
