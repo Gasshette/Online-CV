@@ -48,7 +48,7 @@ const Profile = () => {
         <span className='avatar'>
           <Avatar size={100} src={pp} />
         </span>
-        <a href='https://www.linkedin.com/in/quentin-grisel-587542134'>
+        <a href='https://www.linkedin.com/in/%E2%AD%90-quentin-grisel-587542134/'>
           <LinkedinFilled style={{ fontSize: '50px' }} />
         </a>
         <a href='https://github.com/Gasshette'>
