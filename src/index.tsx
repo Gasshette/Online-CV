@@ -10,7 +10,7 @@ import Loader from './Components/Loader';
 import App from './AppWrapper/app';
 
 ReactDOM.render(
-  <Suspense fallback={<Loader/>}>
+  <Suspense fallback={<Loader />}>
     <App />
   </Suspense>,
   document.getElementById('root')
