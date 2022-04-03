@@ -1,6 +1,6 @@
 import React from 'react';
-import './text-writer.scss';
 import DOMPurify from 'dompurify';
+import './text-writer.scss';
 
 interface ITextWriterState {
     writtenText: string,
@@ -9,30 +9,32 @@ interface ITextWriterState {
 
 const TextWriter = ({ text, speed }: { text: string, speed: number }) => {
     const initialState = { writtenText: '', index: 0 };
-    const sanitizer = DOMPurify.sanitize; // Allow us to use dangerouslySetInnerHTML below with a clean DOM
-    let animKey: any;
+    const sanitizer = DOMPurify.sanitize;
 
     const [state, setState] = React.useState<ITextWriterState>(initialState);
 
     React.useEffect(() => {
-        animKey = setInterval(() => {
-            if (state.index >= text.length - 1) {
-                clearInterval(animKey);
-            } else {
-                setState(({ ...state, index: state.index + 1 }));
-            }
-        }, speed);
+        if (state.index < text.length - 1) {
+            const animKey = setInterval(() => {
+                setState(state => {
+                    if (state.index > text.length - 1) {
+                        clearInterval(animKey);
+                        return { ...state };
+                    }
+                    return {
+                        writtenText: state.writtenText + text[state.index],
+                        index: state.index + 1
+                    };
+                });
+            }, speed);
 
-        return () => clearInterval(animKey);
-    });
+            return () => clearInterval(animKey);
+        }
+    }, []);
 
+    // Reset the state when the text is changed (Language change)
     React.useEffect(() => {
-        setState(state => ({ ...state, writtenText: state.writtenText + text[state.index] }))
-    }, [state.index]);
-
-    // Reset the state when the text is changed
-    React.useEffect(() => {
-        if (state.writtenText.length > 0) {
+        if (text.length > 0) {
             setState(initialState);
         }
     }, [text])
