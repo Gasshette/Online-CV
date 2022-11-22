@@ -30,7 +30,7 @@ const TextWriter = ({ text, speed }: { text: string, speed: number }) => {
 
             return () => clearInterval(animKey);
         }
-    }, []);
+    }, [state]);
 
     // Reset the state when the text is changed (Language change)
     React.useEffect(() => {

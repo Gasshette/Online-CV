@@ -1,7 +1,7 @@
 // The most non optimized script to change colors and create a snowfall ! Yay ! 
 
 const date = new Date();
-const christmasColor = '#f1522e';
+const christmasColor = '#e40606';
 const bodyHeight = document.body.offsetHeight;
 const bodyWidth = document.body.offsetWidth;
 
@@ -61,7 +61,6 @@ if ((Date.now() > minDate) && (Date.now() < maxDate)) {
         cards = document.getElementsByClassName('card-component');
 
         if (cards.length > 0) {
-            console.log(cards);
 
             cards.forEach(c => {
                 c.style.borderColor = christmasColor;
