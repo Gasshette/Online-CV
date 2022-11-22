@@ -7,6 +7,16 @@
   .content {
     width: 115px;
     margin: auto;
+
+  }
+
+  .christmas-hat {
+    position: absolute;
+    z-index: 999;
+    margin-top: -15px;
+    width: 120px;
+    height: 120px;
+    display: none;
   }
 
   .icon-language-selector {

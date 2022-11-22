@@ -7,6 +7,7 @@ import WithAnimation from '../Components/WithAnimation/with-animation';
 import 'animate.css';
 import './app.scss';
 import './app-small-screen.scss';
+import '../assets/christmas.js';
 
 const App = () => {
   const [isDesktop, setIsDesktop] = React.useState(false);
