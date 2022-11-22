@@ -10,9 +10,13 @@ import pp from '../../assets/images/profile-pic.jpeg';
 import './profile.scss';
 import './profile-small-screen.scss';
 import TextWriter from '../TextWriter/text-writer';
+import { useScreenSize } from '../../Hooks/useScreenSize';
+import DOMPurify from 'dompurify';
 
 const Profile = () => {
   const [t, i18n] = useTranslation();
+  const isDesktop = useScreenSize();
+  const sanitizer = DOMPurify.sanitize;
 
   const [description, setDescription] = React.useState<string>();
   React.useEffect(() => {
@@ -56,7 +60,8 @@ const Profile = () => {
         </a>
       </div>
       <div className="content">
-        {description && <TextWriter text={description} speed={30} />}
+        {description && isDesktop && <TextWriter text={description} speed={30} />}
+        {description && !isDesktop && <span dangerouslySetInnerHTML={{ __html: sanitizer(description) }} />}
       </div>
     </div>
   )
