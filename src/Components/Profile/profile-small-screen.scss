@@ -1,6 +1,7 @@
 @media screen and (max-width: 992px) {
   .profile-component {
     display: block;
+    text-align: justify;
 
     .avatar {
       display: none;
@@ -8,9 +9,10 @@
 
     .logos {
       display: flex;
-      justify-content: flex-start;
+      margin-top: 30px;
+      justify-content: center;
 
-      a:last-child{
+      a:last-child {
         margin-left: 20px;
       }
     }

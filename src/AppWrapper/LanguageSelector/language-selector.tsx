@@ -2,7 +2,7 @@ import React from 'react';
 import { withTranslation, WithTranslation } from 'react-i18next';
 import { GlobalOutlined, FlagOutlined, FlagFilled } from '@ant-design/icons';
 import './language-selector.scss';
-import WithAnimation from '../../Components/WithAnimation/with-animation';
+import ChristmasHat from '../../assets/images/bonnet-noel.png';
 
 interface IProps extends WithTranslation {
   style: object;
@@ -14,6 +14,7 @@ const LanguageSelector = ({ style, i18n, t }: IProps) => {
   return (
     <div className='language-selector-component'>
       <div className='content'>
+        <img src={ChristmasHat} className="christmas-hat" />
         <div className='icon-surrounder'>
           <GlobalOutlined
             className='icon-language-selector'

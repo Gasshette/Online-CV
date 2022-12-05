@@ -7,14 +7,11 @@ import WithAnimation from '../Components/WithAnimation/with-animation';
 import 'animate.css';
 import './app.scss';
 import './app-small-screen.scss';
+import '../assets/christmas.js';
+import { useScreenSize } from '../Hooks/useScreenSize';
 
 const App = () => {
-  const [isDesktop, setIsDesktop] = React.useState(false);
-  React.useEffect(() => {
-
-    // Size is defined by the component : https://ant.design/components/grid/#Col
-    setIsDesktop(window.innerWidth > 992);
-  }, []);
+  const isDesktop = useScreenSize();
 
   return (
     <div className='app'>
@@ -27,11 +24,16 @@ const App = () => {
           </Col>
         )}
         <Col xs={24} lg={10} className='col-profile'>
-          <Affix offsetTop={50}>
-            <WithAnimation animation="animate__fadeInLeft">
+          {isDesktop ?
+            <Affix offsetTop={50}>
+              <WithAnimation animation="animate__fadeInLeft">
+                <Profile />
+              </WithAnimation>
+            </Affix>
+            : <WithAnimation animation="animate__fadeInLeft">
               <Profile />
             </WithAnimation>
-          </Affix>
+          }
         </Col>
         {isDesktop && (
           <Col span={4} className='col-menu'>
